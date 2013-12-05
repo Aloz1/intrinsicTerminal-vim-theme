@@ -16,7 +16,7 @@
 set background=dark
 
 let colorFolderName = "colors"
-let Xres = readfile("/home/alastair/.Xresources")
+let Xres = readfile($HOME . "/.Xresources")
 let mtch = ""
 
 " Set some sane defaults as colours
