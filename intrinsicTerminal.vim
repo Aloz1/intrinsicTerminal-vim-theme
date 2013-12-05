@@ -86,14 +86,14 @@ exe "hi LineNr         term=underline guifg=" . C_130
 exe "hi CursorLineNr   term=bold  gui=bold guifg=" . C_130
 exe "hi Question       term=standout guifg=" . colors[5]
 exe "hi Title          term=bold gui=bold guifg=" . colors[8]
-exe "hi Visual         term=reverse guibg=" . colors[10]
+exe "hi Visual         term=reverse guibg=" . colors[2] . " guifg=" . colors[1]
 exe "hi WarningMsg     term=standout guifg=" . colors[4]
 exe "hi WildMenu       term=standout guifg=" . colors[3] . " guibg=" . colors[14]
 exe "hi Folded         term=standout guifg=" . colors[7] . " guibg=" . C_248
 exe "hi FoldColumn     term=standout guifg=" . colors[7] . " guibg=" . C_248
 exe "hi DiffAdd        term=bold guibg=" . C_81
-exe "hi DiffChange     term=bold guibg=" . C_225
-exe "hi DiffDelete     term=bold gui=bold guifg=" . colors[15] . " guibg=" . C_159
+exe "hi DiffChange     term=bold guibg=" . C_225 . " guifg=" . colors[3]
+exe "hi DiffDelete     term=bold gui=bold guifg=" . colors[3] . " guibg=" . C_159
 exe "hi DiffText       term=reverse gui=bold guibg=" . colors[12]
 exe "hi SignColumn     term=standout guifg=" . colors[7] . " guibg=" . C_248
 exe "hi Conceal        guifg=" . colors[7] . " guibg=" . C_242
@@ -101,18 +101,18 @@ exe "hi SpellBad       term=reverse gui=undercurl guisp=" . C_224
 exe "hi SpellCap       term=reverse gui=undercurl guisp=" . C_81
 exe "hi SpellRare      term=reverse gui=undercurl guisp=" . C_225
 exe "hi SpellLocal     term=underline gui=undercurl guisp=" . colors[17]
-exe "hi Pmenu          guibg=" . C_225
+exe "hi Pmenu          guibg=" . C_225 . " guifg=" . colors[3]
 exe "hi PmenuSel       guibg=" . colors[7]
 exe "hi PmenuSbar      guibg=" . C_248
 exe "hi PmenuThumb     guibg=" . colors[3]
 exe "hi TabLine        term=underline gui=underline guibg=" . colors[10]
 exe "hi TabLineSel     term=bold gui=bold"
 exe "hi CursorColumn   term=reverse guibg=" . colors[10]
-exe "hi CursorLine     term=underline guibg=Grey90"
-exe "hi ColorColumn    term=reverse guibg=" . C_224
-exe "hi Cursor         guifg=" . colors[0] . " guibg=" . colors[2]
+exe "hi CursorLine     term=underline guibg=Grey90 guifg=" . colors[3]
+exe "hi ColorColumn    term=reverse guibg=" . C_224 . " guifg=" . colors[3]
+exe "hi Cursor         guifg=" . colors[3] . " guibg=" . colors[0]
 exe "hi Normal         guifg=" . colors[2] . " guibg=" . colors[1]
-exe "hi MatchParen     term=reverse guibg=" . colors[17]
+exe "hi MatchParen     term=reverse guibg=" . colors[17] . " guifg=" . colors[3]
 exe "hi Comment        term=bold guifg=" . colors[7]
 exe "hi Constant       term=underline guifg=" . colors[4]
 exe "hi Special        term=bold guifg=" . colors[8]
