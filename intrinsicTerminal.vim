@@ -55,7 +55,7 @@ let C_248     = "#a8a8a8"
 " Get the line with the colour include
 for i in Xres
     if matchstr( i, "#include\\s*\"[^\"\\r\\n]*/" . colorFolderName . "/[^\"\\r\\n]*\"" ) != ""
-        let mtch = matchstr( i, "#include\\s*\"\\zs[^\"\\r\\n]*\\ze\"" )
+        let mtch = $HOME . "/" . matchstr( i, "#include\\s*\"\\zs[^\"\\r\\n]*\\ze\"" )
     endif
 endfor
 
