@@ -25,6 +25,5 @@ As an example, I have my colorschemes in ".Xconf/colors/" so I would place
 Installation
 ------------
 
-To install, simply place the [intrinsicTerminal.vim](intrinsicTerminal.vim) file within
-your ~/.vim/colors/ folder then place 'colorscheme intrinsicTerminal' into your ~/.gvimrc
-file. Once that is done, All should be well in the world of gvim.
+To install, simply install using pathogen/vundle or place the [colors/intrinsicTerminal.vim](intrinsicTerminal.vim) file within your ~/.vim/colors/ folder then place 'colorscheme intrinsicTerminal' into
+your ~/.gvimrc file. Once that is done, all should be well in the world of gvim.
